@@ -28,7 +28,7 @@ pipeline{
         stage('Desplegar Docker'){
             steps{
                 script{
-                    sh "docker run -d -p 8109:80 --name ${env.CONTENEDOR} ${env.IMAGEN}"
+                    sh "docker run -d -p 8100:80 --name ${env.CONTENEDOR} ${env.IMAGEN}"
                 }
             }
         }
