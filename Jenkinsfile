@@ -1,8 +1,8 @@
 pipeline{
     agent any
     environment{
-        CONTENEDOR = 'mi-contenedor-Prueba'
-        IMAGEN = 'mi-imagen-prueba'
+        CONTENEDOR = 'mi-contenedor-RecursoInteractivo'
+        IMAGEN = 'recurso-interactivo'
     }
     stages{
         stage('Preparar Entorno Docker'){
@@ -14,7 +14,7 @@ pipeline{
         stage('Clonar Repositorio'){
             steps{
                 script{
-                    git 'https://github.com/Dhomochevsk/jenkinsPractica.git'
+                    git 'https://github.com/Dhomochevsk/recursoInteractivoJenkins.git'
                 }
             }
         }
@@ -28,7 +28,7 @@ pipeline{
         stage('Desplegar Docker'){
             steps{
                 script{
-                    sh "docker run -d -p 8107:80 --name ${env.CONTENEDOR} ${env.IMAGEN}"
+                    sh "docker run -d -p 8109:80 --name ${env.CONTENEDOR} ${env.IMAGEN}"
                 }
             }
         }
