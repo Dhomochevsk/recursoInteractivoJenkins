@@ -37,7 +37,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
-    max-width: 900px;
+    max-width: 90%;
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
