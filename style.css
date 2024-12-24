@@ -4,7 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-image: url('https://go2ops.com/en/wp-content/uploads/2023/07/23W01-blog-HowToSecureYourCICDPipeline-1.png'); /* Ruta de la imagen */
+    background-image: url('https://blog.openreplay.com/images/create-a-ci-cd-pipeline-for-front-end-projects/images/hero.png'); /* Ruta de la imagen */
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
